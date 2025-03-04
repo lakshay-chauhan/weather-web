@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 max-w-2xl mx-auto">
+    <input id="cityInput" class="border p-2 w-full" placeholder="Enter city name">
+    <button onclick="fetchWeather()" class="bg-blue-500 text-white p-2 mt-2">Get Weather</button>
+    <button onclick="toggleUnit()" class="bg-green-500 text-white p-2 mt-2">Toggle °C/°F</button>
+    <button onclick="exportToPDF()" class="bg-red-500 text-white p-2 mt-2">Export Journal</button>
+    <p id="error" class="text-red-500"></p>
+    <div id="weather" class="mt-4"></div>
+    <div id="forecast" class="mt-4"></div>
+    <script src="weather.js"></script>
+</body>
+</html>
