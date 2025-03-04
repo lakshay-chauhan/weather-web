@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 max-w-6xl mx-auto">
+    <div class="flex gap-4 mb-4">
+        <input id="searchInput" class="border p-2 w-full" placeholder="Search products...">
+        <select id="sortSelect" class="border p-2">
+            <option value="price-asc">Low to High</option>
+            <option value="price-desc">High to Low</option>
+        </select>
+    </div>
+    <div id="productGrid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
